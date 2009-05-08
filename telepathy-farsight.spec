@@ -1,5 +1,5 @@
 %define name telepathy-farsight
-%define version 0.0.6
+%define version 0.0.7
 %define release %mkrel 1
 
 %define major 0
@@ -11,7 +11,6 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://telepathy.freedesktop.org/releases/telepathy-farsight/%{name}-%{version}.tar.gz
-Patch0: telepathy-farsight-0.0.6-strfmt.patch
 License: LGPLv2+
 Group: Networking/Instant messaging
 Url: http://telepathy.freedesktop.org/wiki/
@@ -84,7 +83,6 @@ applications.
 
 %prep
 %setup -q
-%patch0 -p1 -b .strfmt
 
 %build
 %configure2_5x --disable-static
