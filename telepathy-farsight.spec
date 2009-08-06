@@ -19,6 +19,7 @@ BuildRequires: dbus-glib-devel
 BuildRequires: libtelepathy-glib-devel
 BuildRequires: farsight2-devel
 BuildRequires: gstreamer0.10-python-devel
+BuildRequires: python-devel
 BuildRequires: gtk-doc
 
 %description
