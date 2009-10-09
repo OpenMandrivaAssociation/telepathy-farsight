@@ -1,6 +1,6 @@
 %define name telepathy-farsight
 %define version 0.0.11
-%define release %mkrel 1
+%define release %mkrel 2
 
 %define major 0
 %define libname %mklibname %name %major
@@ -11,6 +11,11 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://telepathy.freedesktop.org/releases/telepathy-farsight/%{name}-%{version}.tar.gz
+# (misc) patch from upstream, taken from ubuntu, to fix memory corruption
+# experienced with voip and webcam testing 
+Patch0: 0001-FsCodecParamters-should-be-allocated-using-g_slice_n.patch
+Patch1: 0002-Simplify-converting-optional-codec-parameters-from-t.patch
+
 License: LGPLv2+
 Group: Networking/Instant messaging
 Url: http://telepathy.freedesktop.org/wiki/
@@ -84,7 +89,8 @@ applications.
 
 %prep
 %setup -q
-
+%patch0 -p1
+%patch1 -p1
 %build
 %configure2_5x --disable-static
 %make
