@@ -1,6 +1,6 @@
 %define name telepathy-farsight
-%define version 0.0.15
-%define release %mkrel 2
+%define version 0.0.16
+%define release %mkrel 1
 
 %define major 0
 %define libname %mklibname %name %major
@@ -17,7 +17,7 @@ Group: Networking/Instant messaging
 Url: http://telepathy.freedesktop.org/wiki/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: dbus-glib-devel
-BuildRequires: libtelepathy-glib-devel
+BuildRequires: libtelepathy-glib-devel >= 0.13.4
 BuildRequires: farsight2-devel
 BuildRequires: gstreamer0.10-python-devel
 BuildRequires: python-devel
