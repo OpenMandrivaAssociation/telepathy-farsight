@@ -1,5 +1,5 @@
 %define name telepathy-farsight
-%define version 0.0.16
+%define version 0.0.17
 %define release %mkrel 1
 
 %define major 0
