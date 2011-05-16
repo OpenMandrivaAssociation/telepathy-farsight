@@ -1,5 +1,5 @@
 %define name telepathy-farsight
-%define version 0.0.17
+%define version 0.0.18
 %define release %mkrel 1
 
 %define major 0
@@ -18,7 +18,7 @@ Url: http://telepathy.freedesktop.org/wiki/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: dbus-glib-devel
 BuildRequires: libtelepathy-glib-devel >= 0.13.4
-BuildRequires: farsight2-devel
+BuildRequires: farsight2-devel >= 0.0.28
 BuildRequires: gstreamer0.10-python-devel
 BuildRequires: python-devel
 BuildRequires: gtk-doc
