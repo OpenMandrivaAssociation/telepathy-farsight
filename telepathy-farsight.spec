@@ -5,7 +5,7 @@
 Summary: Stream Engine to handle media streaming channels
 Name: telepathy-farsight
 Version: 0.0.19
-Release: 2
+Release: 3
 License: LGPLv2+
 Group: Networking/Instant messaging
 Url: http://telepathy.freedesktop.org/wiki/
