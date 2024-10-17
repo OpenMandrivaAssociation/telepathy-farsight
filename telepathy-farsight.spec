@@ -8,7 +8,7 @@ Version: 0.0.19
 Release: 3
 License: LGPLv2+
 Group: Networking/Instant messaging
-Url: http://telepathy.freedesktop.org/wiki/
+Url: https://telepathy.freedesktop.org/wiki/
 Source0: http://telepathy.freedesktop.org/releases/telepathy-farsight/%{name}-%{version}.tar.gz
 
 BuildRequires:  pkgconfig(dbus-glib-1)
