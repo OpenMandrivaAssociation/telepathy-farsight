@@ -11,6 +11,11 @@ Group: Networking/Instant messaging
 Url: https://telepathy.freedesktop.org/wiki/
 Source0: http://telepathy.freedesktop.org/releases/telepathy-farsight/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(dbus-glib-1)
 BuildRequires:  pkgconfig(farsight2-0.10)
 BuildRequires:  pkgconfig(gst-python-0.10)
